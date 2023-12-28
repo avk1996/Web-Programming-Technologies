@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover by JQuery</title>
+    <script src="./../../jquery/scripts/jquery.js"></script>
+
+    <style>
+      .myclass {
+        background-color: blue;
+        color: white;
+        font-size: 3rem;
+      }
+      .myc {
+        background-color: black;
+        color: whitesmoke;
+        font-size: 6rem;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        //mouse in mouse out
+        $("h2").hover(
+          function () {
+            $(this).addClass("myclass");
+            $(this).removeClass("myc");
+          },
+          function () {
+            $(this).addClass("myc");
+            // $(this).removeClass("myclass");
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <h1 align="center">Hover by JQuery</h1>
+    <!-- <p class="myc">This is Para1</p>
+    <p class="myc">This is Para2</p> -->
+    <h2 align="center">This is Para3</h2>
+    <h2 align="center">This is Para4</h2>
+  </body>
+</html>

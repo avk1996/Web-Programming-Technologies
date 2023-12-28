@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script>
+      class Person {
+        constructor(id, name, mobile) {
+          this.id = id;
+          this.name = name;
+          this.mobile = mobile;
+        }
+        display() {
+          //   console.log("Id: " + id + " name: " + name + " dept: " + this.mobile);
+          console.log(
+            `Id: " + ${this.id} + " name: " + ${this.name} + " dept: " + ${this.mobile}`
+          );
+        }
+      }
+      class Employee extends Person {
+        constructor(id, name, mobile, dept, designation) {
+          super(id, name, mobile);
+          this.dept = dept;
+          this.designation = designation;
+        }
+        display() {
+          super.display();
+          console.log(
+            `Department: " + ${this.dept} + " Designation: " + ${this.designation} `
+          );
+        }
+      }
+
+      e1 = new Employee(1, "Abhishek", 98000123, "HR", "Manager");
+      e1.display();
+      e1["sal"] = 123456;
+      console.log("Displaying various property via for each loop: ");
+      for (var emp in e1) {
+        console.log(`${emp}: ${e1[emp]}`);
+      }
+      p1 = new Person(2, "Bhibishan", 960900122);
+      p1.display();
+    </script>
+  </body>
+</html>

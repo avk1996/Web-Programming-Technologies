@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./../../jquery/scripts/jquery.js">
+              //   function assignStyle() {
+      //     array1 = document.getElementsByTagName("p");
+      //     for (var item of array1) {
+      //       item.style = "background-color: yellow";
+      //     }
+      // }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        alert("TESTING");
+
+        $("#MyDiv").html("This is the data in the div");
+        $("#btn").click(function () {
+          $("p").css({
+            "background-color": "yellow",
+          });
+          $("h1").css({
+            "background-color": "green",
+          });
+          $("h2").css({
+            "background-color": "blue",
+          });
+          $("h3").css({
+            "background-color": "pink",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button type="button" name="btn" id="btn">CLICK ME</button>
+    <h1 name="h1">Title 1</h1>
+    <h2 name="h2">Title 2</h2>
+    <h3 name="3">Title 3</h3>
+    <p>Para1</p>
+    <p>Para2</p>
+    <p>Para3</p>
+    <div id="MyDiv"></div>
+  </body>
+</html>

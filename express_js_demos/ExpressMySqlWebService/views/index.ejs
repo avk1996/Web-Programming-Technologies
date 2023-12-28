@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Management System</title>
+</head>
+<body>
+    <header><h1 align="center">Product Management System</h1></header>
+    <table align="center" border="1">
+        <thead>
+            <tr>
+                <th colspan="5">
+                    PRODUCT'S
+                </th>
+            </tr>
+            <form action="/add_product" method="get">
+
+                <tr align="center">
+                    <td colspan="5">
+                        <button type="submit" id="btn" name="add_product" value="add_product">Add Product</button>
+                    </td>
+                </tr>
+            </form>
+            <tr align="center">
+                <td>Id</td>
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Price</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i=0;i<prod_data.length;i++) {%>
+                <tr align="center">
+                    <td><%=prod_data[i].pid%></td>
+                    <td><%=prod_data[i].pname%></td>
+                    <td><%=prod_data[i].qty%></td>
+                    <td><%=prod_data[i].price%></td>
+                    <td>
+                        <a href="#">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1827/1827933.png"  width="15" height="15"/>
+                        </a> 
+                        <a href="#">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3405/3405244.png" width="15" height="15"/>
+                        </a>
+                    </td>
+                </tr>
+            <%} %>
+        </tbody>
+    </table>
+</body>
+</html>

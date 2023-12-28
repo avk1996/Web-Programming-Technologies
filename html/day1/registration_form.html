@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Registration Form</title>
+    <style>
+      table {
+        border-style: ridge;
+        padding: 30px;
+      }
+      label:hover{
+        background: gold;
+      }
+      input:hover{
+        background: blue;
+      }
+      button:hover{
+        background: red;
+      }
+      marquee:hover{
+        background: palevioletred;
+      }
+      #div1{
+        background: blueviolet;
+        /* position:fixed; */
+        /* /* position: relative; */
+        position: sticky;
+        top: 0px;
+      }
+      #footer1{
+        background: green;
+        width: 100%;
+        /* position:fixed; */
+        /* /* position: relative; */
+        position: fixed;
+        bottom: 0px;
+      }
+      footer{
+        background: red;
+        width: 100%;
+        /* position:fixed; */
+        /* /* position: relative; */
+        position: fixed;
+        margin: 10px;
+        bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 align="center">Regional Travel Agency, Mumbai</h1>
+    <marquee direction="right">Family vacation coming soon!!!</marquee>
+    <div id="div1">
+      SUSCRIBE TO OUR NEWSLETTER
+    </div>
+    <footer id="footer1">
+      COPYRIGHT(C) ABHISHEK DESIGNS PVT LTD. 
+    </footer>   
+    <footer>
+      COPYRIGHT(C) ABHISHEK & Bro DESIGNS PVT LTD. 
+    </footer>   
+    <form target="_self" action="thankyou.html" method="post">
+      <fieldset>
+        <legend align="left">Travel Registration Form</legend>
+        <table align="center">
+          <tr>
+            <td><label for="name">Name: </label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                size="10"
+                autofocus
+                placeholder="Enter full name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="id">Age: </label></td>
+            <td>
+              <input
+                type="number"
+                min="18"
+                max="60"
+                id="age"
+                size="4"
+                placeholder="Age"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobile">Mobile: </label></td>
+            <td>
+              <input
+                type="text"
+                id="mobile"
+                size="10"
+                pattern="[987][0-9]{9}"
+                placeholder="Phone no."
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender: </label></td>
+            <td>
+              <input type="radio" name="Gender" id="male" required /><label
+                for="male"
+                >Male</label
+              >
+              <input type="radio" name="Gender" id="female" required /><label
+                for="female"
+                >Female</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="hobbies">hobbies: </label></td>
+            <td>
+              <input type="checkbox" name="Hobbies" id="Reading" /><label
+                for="Reading"
+                >Reading</label
+              >
+              <input type="checkbox" name="hobbies" id="Trekking" /><label
+                for="Trekking"
+                >Trekking</label
+              >
+              <input type="checkbox" name="Hobbies" id="Video" /><label
+                for="Video"
+                >Video games</label
+              >
+              <input type="checkbox" name="hobbies" id="Drawing" /><label
+                for="Drawing"
+                >Drawing</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="city">City</label>
+            </td>
+            <td>
+              <select name="city" id="city">
+                <option value="Pune">Pune</option>
+                <option value="Solapur">Solapur</option>
+                <option value="Kholapur">Kholapur</option>
+                <option value="Mumbai">Mumbai</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Date of Travel:</label></td>
+            <td>
+              <input type="date" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="degree">Degree: </label></td>
+            <td>
+              <input type="checkbox" name="degree" id="BTech" /><label
+                for="BTech"
+                >BTech</label
+              >
+              <input type="checkbox" name="degree" id="BE" /><label for="BE"
+                >B.E.</label
+              >
+              <input type="checkbox" name="degree" id="Msc" /><label for="Msc"
+                >M.Sc.</label
+              >
+            </td>
+          </tr>
+          <tr align="center">
+            <td>
+              <button type="submit" id="rg">Register</button>
+              <button type="reset">Clear</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

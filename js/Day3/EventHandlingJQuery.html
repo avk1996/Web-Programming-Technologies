@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling Via JQuery</title>
+    <script src="./../../jquery/scripts/jquery.js"></script>
+    <style>
+      .title {
+        font-size: 30px;
+        margin: auto;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(":input[type='text']").focus(function () {
+          $(this).css({ "background-color": "cyan" });
+        });
+        $(":input[type='text']").blur(function () {
+          $(this).css({ "background-color": "white" });
+        });
+        //mouse over, mouse out
+        $("div").hover(
+          function () {
+            // alert("hover");
+            $(this).css({ "background-color": "yellow" });
+          },
+          function () {
+            // alert("hover1");
+            $(this).css({ "background-color": "red" });
+          }
+        );
+        $("div").css({ "background-color": "pink" });
+      });
+    </script>
+  </head>
+  <body>
+    <h1 align="center">Event Handling Via JQuery</h1>
+    <div align="center" class="title">
+      ------------HOVER HERE PLEASE-----------
+    </div>
+    <form action="">
+      Name: <input type="text" name="name" id="name" /><br />
+      mobile: <input type="text" name="mobile" id="mobile" /><br />
+      add: <input type="text" name="add" id="add" />
+    </form>
+  </body>
+</html>

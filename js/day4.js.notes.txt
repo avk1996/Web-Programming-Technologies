@@ -1,0 +1,32 @@
+Toggle class
+
+Append and Prepend function
+
+ajax request will only change a portion of the page
+
+
+ajax is always sent request only and only from js
+
+Class: XmlHttpRequest 
+
+AJAX engine 
+
+AJAX(Asynchronous Java Script and XML)
+(To replace the portion of the page dynamically without reloding the entire page)
+
+e.g. when we select a country name then it must show its respective states
+     After successful log display welcome username on top of the page
+
+1. 
+wherenever ajax request is generated it will first go to AJAX engine then this engine will convert it into http request
+
+2.
+http request handled by the server and it sends the data to ajax engine
+
+3. 
+ajax engine will send it to js code
+
+4.
+js code will display it in the browser 
+ 
+

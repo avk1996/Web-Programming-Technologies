@@ -1,0 +1,22 @@
+Reach Learn Notes:
+
+1. 'export default' signify the main component of the file
+
+2.  JSX markup syntax, JSX is stricter than HTML e.g. it requires to close tags <br />
+
+3. Component cannot return multiple tags but rather wrapped within one parent tag e.g. <div></div> or an empty wrapping is also allowed <></>
+
+4. we can add style using 'className' in react
+
+Lists in React:
+
+1. when we need to display the list of items in react
+
+2. then we can do it by <li> and within <li> unique key keyword is required and key must uniquely identifiable
+
+3. react uses key to know what happens when we modify the data such as insert, delete or reorder the items
+
+Responding to events: 
+
+1. functions starting with 'use' are called as Hooks
+Router DOM

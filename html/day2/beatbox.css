@@ -1,0 +1,20 @@
+@keyframes animation1 {
+    to{
+        background-color: aqua;
+        width: 50px;
+        height: 0px;
+    }
+    from{
+        background-color: red;
+        width: 50px;
+        height: 100px;
+    }
+}
+div{
+    background-color: green;
+    width: 100px;
+    height: 10px;
+    animation: animation1;
+    animation-duration: 1s;
+    animation-iteration-count: 10;
+}   

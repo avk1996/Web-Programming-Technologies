@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Demo</title>
+    <script>
+      function changeString() {
+        var str = document.getElementById("str").value;
+        var choice = document.getElementById("op").value;
+        var result;
+        switch (choice) {
+          case "upper":
+            result = str.toUpperCase();
+            break;
+          case "lower":
+            result = str.toLowerCase();
+            break;
+          case "replace":
+            //then string enclose in
+            result = str.replace(/ain/gi, "xxx");
+            break;
+          case "split":
+            var delim = prompt("Enter delimiter: ");
+            result = str.split(delim);
+            break;
+          case "slice":
+            var start = 2; //inclusive
+            var end = 5; //exclusive
+            result = str.slice(start, end);
+            break;
+          case "search": //to seach for pattern then use search
+            result = str.search(/s.*?e/);
+            break;
+          case "match":
+            result = str.match(/s.*e/);
+            break;
+          case "include":
+            //for filtering a data use inclue
+            result = str.includes("ain");
+            break;
+        }
+        document.getElementById("result").value = result;
+        document.getElementById("div1").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <form action="post">
+      <table>
+        <tr>
+          <td>Enter String:</td>
+          <td><input type="text" name="str" id="str" /></td>
+        </tr>
+        <tr>
+          <td>Result:</td>
+          <td>
+            <input type="text" name="result" id="result" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Operations:</td>
+          <td>
+            <select name="op" id="op">
+              <option value="upper">Upper</option>
+              <option value="lower">Lower</option>
+              <option value="replace">replace</option>
+              <option value="slice">Slice</option>
+              <option value="split">Split</option>
+              <option value="match">Match</option>
+              <option value="include">Include</option>
+              <option value="search">Search</option>
+              <option value="trim">Trim</option>
+            </select>
+          </td>
+        </tr>
+        <tr></tr>
+      </table>
+      <input type="button" value="Click Here" onclick="changeString()" />
+    </form>
+    <div id="div1"></div>
+  </body>
+</html>

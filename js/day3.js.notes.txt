@@ -1,0 +1,35 @@
+await must be used inside a ascynchronous function and to pause the a function
+a function is asynchronous function when async is used infront of the function
+
+for e.g.
+async function fetchdata(){
+	result = await fetch("Url");
+	if(result.status == 200 && result.ok){
+		data = await result.json();
+		displaytable(data);
+	}
+}
+
+promices, await catch then is used in react
+
+
+writing $ instead of JQuery is OK to write
+
+Selectors in jQuery:
+
+$('p') $('p,div,h1')	Tag Selector
+$('#myid')	Id selector
+$('.myclass')	class selector
+$("input[type='text']")	Tag attribute value selector
+$("input[name]") Tag attribute selector
+$('P:first-child')	selects the first child of the tag if it is p
+$('P:nth-child')	selects the nth child of the tag if it is p
+$('P:odd-child')	selects the odd child of the tag if it is p => 0,2,3,4 indexes
+
+html -> DOM -> js -> jquery
+
+It supports cross browser
+select html elements
+animate html elements
+make ajax calls
+jquery brought the date plugin is brought in

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <button type="button" name="btn" id="btn" onclick="findLocation()">
+      Get Location
+    </button>
+    <script>
+      function findLocation() {
+        if (!navigator.geolocation) {
+          document.getElementById("div1").innerHTML =
+            "Geolocation is not supported";
+        } else {
+          //Arguments of getCurrentPosition:
+          //callback functions -> showPostion and showError
+          //after complition of procedure give me
+          //position or error
+          //New function: watchposition to get live location
+          //and to stop the watchpostion do: navigator.geolocation.watchPosition.clear()
+          navigator.geolocation.getCurrentPosition(showPosition, showError); //Asynchronous type of function
+          //getcurrentposition is hadled by any worker thread
+        }
+        //display the function
+        function showPosition(myPosition) {
+          document.getElementById("div1").innerHTML =
+            "Lattitude: " +
+            myPosition.coords.latitude +
+            " Longitude: " +
+            myPosition.coords.longitude;
+        }
+
+        function showError(myError) {
+          document.getElementById("div1").innerHTML = "Error: " + myError;
+        }
+      }
+    </script>
+    <div id="div1"></div>
+  </body>
+</html>

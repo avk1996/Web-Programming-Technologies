@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial And Addition</title>
+    <script src="FactorialAndAdd.js"></script>
+  </head>
+  <body>
+    <form method="post">
+      <table>
+        <tr>
+          <td>Enter number 1:</td>
+          <td><input type="number" id="num1" /></td>
+          <td name="errNum" id="errNum"></td>
+        </tr>
+        <tr>
+          <td>Enter number 2:</td>
+          <td><input type="number" id="num2" /></td>
+        </tr>
+        <tr>
+          <td>Result:</td>
+          <td>
+            <input type="number" id="result" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" onclick="calculate('a')" value="Addition" />
+          </td>
+          <td>
+            <input type="button" onclick="calculate('f')" value="Factorial" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

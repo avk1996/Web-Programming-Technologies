@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Form</title>
+    <script src="EmployeeCURD.js"></script>
+  </head>
+  <body onload="displayTable()">
+    <form>
+      <table>
+        <tr>
+          <td>Employee Id:</td>
+          <td><input type="text" name="id" id="id" autofocus /></td>
+        </tr>
+        <tr>
+          <td>Employee Name:</td>
+          <td><input type="text" name="name" id="name" /></td>
+        </tr>
+        <tr>
+          <td>Employee Mobile:</td>
+          <td><input type="text" name="mobile" id="mobile" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" name="add" id="add" onclick="addEmployee()">
+              Add New Employee
+            </button>
+          </td>
+          <td>
+            <button type="button" name="delete" id="delete" onclick="">
+              Delete Employee
+            </button>
+          </td>
+          <td>
+            <button type="button" name="update" id="update">
+              Update Employee Info
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div id="MyDiv" style="background-color: aqua"></div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style rel="stylesheet"></style>
+  <body>
+    <header><h1>Product Management System</h1></header>
+    <form action="/display_add_form" method="post">
+      <button type="submit" name="btn" value="add" id="add">
+        Add New Product
+      </button>
+      <table>
+        <thead>
+        <tr>
+          <th>Product Id</th>
+          <th>Product Name</th>
+          <th>Product Quantity</th>
+          <th>Product Price</th>
+          <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <%for(let i=0;i<prodata.length;i++){%>
+            <tr>
+                <td><%=prodata[i].pid%></td>
+                <td><%=prodata[i].pname%></td>
+                <td><%=prodata[i].qty%></td>
+                <td><%=prodata[i].price%></td>
+                <td><a href="/delete/<%=prodata[i].pid%>">delete</a>|<a href="/edit/<%=prodata[i].pid%>">edit</a></td>
+            </tr>  
+            <%}%>
+        </tbody>
+        </table>
+    </form>
+  </body>
+</html>

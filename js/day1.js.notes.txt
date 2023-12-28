@@ -1,0 +1,99 @@
+Number related function
+isNaN(n): true, if the n is not the number
+isFinite(n): true, if n is a number
+toFixed(2) XWRONGX: it will display 2 digits after decimal point.
+
+String related function
+String object: 
+
+var mystr = new String('character')
+var mystr = 'fred'
+
+'Avaz'.length => returns the length of string
+
+str.replace("") // is regex and "" is string
+
+g indicates the global flag 
+i indicates the ignore case
+
+if g flag is not used then it will replace only first occence	
+
+? will give first occourance of letter
+if not given it will give last occorance of letter
+
+
+for filtering a data use include
+indexOf() is faster than search and match
+
+Client side validation is done by JS
+
+________________________________________________________________________________________________________________________________
+1. String related function: 
+
+str.match(/regexp/gi): it will return the position of the first occurance of the given pattern
+			Flags:
+			g - Global
+			i - ignorecase
+
+str.search(/regex/gi): same as match
+
+str.replace(/regexp/gi,string): it will reaturn a new string by replaceing first occ. of the given pattern by string
+				Flags:
+				g - global -- this flag will replace all occurance
+				i - ignorecase -- it will make in-case sensitive search
+
+str.split(delimiter): it will break the string in parts, at delimiter position, and return array of values
+
+str.charAt(n): it will return character at nth position in the given string
+
+str.concat(str1,str2,str3...,strn): it will all the n-strings
+
+str.slice(start,end]: it will return the portion of the string from start index to end index, end will be excluded if only
+			start index is given then it will show the string from start to end
+
+str.indexOf('str'): it will return the position of the first occurence of the given substring 
+
+str.trim(): it will remove the leading and trailing white spaces
+_________________________________________________________________________________________________________________________________
+
+_________________________________________________________________________________________________________________________________
+Array related function: 
+
+arr.push(val): Add new value to the end of the array
+
+arr.pop(): remove value to the end of the array
+
+arr.unshift(val): Add new value to the beginning of the array
+
+arr.shift(): remove value to the beginning of the array
+
+arr.splice(position,count,comma seperated list of values): list of values is optional here, this function is used for three tasks
+			i. delete value from the given position
+			e.g: arr.splice(7,1) => delete 1 value from the 7th position
+			ii. insert many values at the given positions
+			e.g: arr.splice(7,2,->3,4,2,3,4,5,5<-) => till 7th and 8th values is deleted and replaced by list of values -><-
+			e.g: to not remove any values then do 0 instead of 2 
+			iii. replace many values at the given positions
+
+arr.indexOf(value): return the index position where the first occurrence of the given value is found
+
+lambda function in java is arrow function in JS
+
+arr.findIndex((value,index,array) => value > 5):  return the index position where the first occurrence of the given value is found
+
+arr.find((value,index,array) => value > 5): return the value where the first occurrence of the given value is found
+
+arr.filter((value,index,array) => value > 5): return all the values, which satisfies the condidtion
+
+arr.map((value,index,array) => value*value): it will map every value from the array into its square
+
+arr.reduce((accumlator,number) => accumlator+number,(inital value)): it will reduce all values from array to single value (aggregation).
+					inital value is optional here.
+arr.sort(compare): passing compare is optional, sort will always sort the values based on ascii values,
+		   so to do the numberic sort, we need to pass a function.
+
+SPREAD OPERATOR: ...arr1: will create a new copy
+_________________________________________________________________________________________________________________________________
+
+
+Amount must be shown 2 decimal places only

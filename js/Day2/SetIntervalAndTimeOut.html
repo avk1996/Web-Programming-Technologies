@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <script>
+      function f2() {
+        var dt = new Date();
+        document.getElementById("MyDiv").value = dt;
+      }
+      function f1() {
+        console.log("In f1");
+      }
+      console.log("Before f1");
+      f1();
+      console.log("After f1");
+      setTimeout(f1, 2000);
+      f2();
+    </script> -->
+  </head>
+  <body>
+    <div id="MyDiv"></div>
+    <script>
+      function f2() {
+        var dt = new Date();
+        document.getElementById("MyDiv").innerHTML = dt;
+      }
+      function f1() {
+        console.log("In f1");
+      }
+      function f3() {
+        console.log(`Clear Timeout after : ${s1}`);
+        clearInterval(s1);
+      }
+      console.log("Before f1");
+      f1();
+      console.log("After f1");
+      setTimeout(f1, 2000);
+      //   f2();
+      var s1 = setInterval(f2, 100);
+      setTimeout(f3, 10000);
+    </script>
+  </body>
+</html>

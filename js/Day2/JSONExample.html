@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script>
+      emp = { id: 1, name: "Abhishek", mobile: 987700011 };
+      //convert emp object to a string: that is JSON(Java Script Object Notation)
+      str1 = JSON.stringify(emp); //using stringify converting emp object to string
+      alert(str1);
+      //convert str1 string to javascript object
+      convertObj = JSON.parse(str1);
+      //   for any other variable convertobj will not be accesesible
+      //   var i;
+      //   convertObj = JSON.parse(i);
+      //   alert(convertObj);
+      alert(
+        `${convertObj["id"]} ${convertObj["name"]} ${convertObj["mobile"]}`
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    <form action="post" onsubmit="return validateData()">
+      <table>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td>
+            <input type="text" id="name" name="name" autofocus/>
+          </td>
+          <td>
+            <p id="errName"></p>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="age">Age</label></td>
+          <td>
+            <input type="number" id="age" name="age" min="5" max="20"/>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dept">Deptartment</label></td>
+          <td>
+            <select id="dept" name="dept">
+              <option value="Physics">Physics</option>
+              <option value="CS">CS</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td>
+            <input type="radio" id="male" name="gender" ><label>Male</label></input>
+            <input type="radio" id="female" name="gender" ><label>Female</label></input>
+          </td>
+          <td id="errGender"></td>
+        </tr>
+        <tr>
+          <td><label for="hobbies">Hobbies</label></td>
+          <td>
+            <input type="checkbox" id="read" name="hobbies" >Reading</input>
+            <input type="checkbox" id="walk" name="hobbies" >Walking</input>
+            <input type="checkbox" id="movie" name="hobbies" >Movies</input>
+            <input type="checkbox" id="box" name="hobbies" >Boxing</input>
+            </td>
+            <td id="errHobbies">
+                
+            </td>
+        </tr>
+        <tr>
+          <td><label for="degree">Degree</label></td>
+          <td>
+            <select id="degree" name="degree">
+                <option value="msc">MSc</option>
+                <option value="mtech">MTech</option>
+              </select>
+          </td>
+          <td id="errDegree"></td>
+        </tr>
+        <tr>
+          <td><label for="city">City</label></td>
+          <td>
+            <select name="city" id="city">
+              <option value="pune">Pune</option>
+              <option value="dhule">Dhule</option>
+              <option value="solapur">Solapur</option>
+              <option value="raigad">Raigad</option>
+            </select>
+          </td>
+          <td id="errCity">
+
+          </td>
+        </tr>
+      </table>
+      <input type="button" value="Submit"/>
+    </form>
+  </body>
+</html>

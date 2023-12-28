@@ -1,0 +1,32 @@
+package.json just like pom.xml in maven
+
+npm init -> asks about value for a key
+npm install -body-parser nodemon
+
+role of -g
+
+express js works on top of node js
+
+
+Client(1)					Express Js(2)
+(navigate URL) ->>> http Request ->>>find out cookies, seperate out url and data or create log or authentication
+					(will be perfomed for every request)
+
+(3)					(4)	
+function are done by 'route handler :  app.get('/users/:uit/edit') (a module) >> req params = {uid: 123,....} - JSON format
+
+(5)		(6)		(7)		 (1)
+middleware >> resp.reder >>>> http response >>>> client
+
+
+
+MVC(Model View control patten used in .net and adv java)
+
+Design Patterns (Gang of 4 patterns) ^^
+
+Now we will use it in expressjs
+
+
+npm install ejs nodemon body-parser express mysql
+
+mysql password: root@123

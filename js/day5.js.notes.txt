@@ -1,0 +1,64 @@
+contact: kishoriak@gmail.com
+
+Node JS
+
+1. V8 engine created by GOOGLE and it is also used in Google Chrome
+2. it is a server side js, using nodeJS you may write web application or web services
+3. It allows user to write a single threaded application , but it internally runs it as multithreaded application.
+
+It has organized data and functions in modular fashion.
+
+Some of the builtin moduler are buffer, fs, http, url
+
+We may write use defined modules also
+
+Mam's nodejs version 20.9.0 I am using V20.10.0
+
+To open 
+
+Node CLI is: 
+READ,EVALUATE, PRINT LOOP (REPL), it helps you to check the output of single command
+
+global object: 
+have all asynchronous function
+
+process object:
+Entire information about the machine we are using
+
+Node is a library which provides the server
+
+NodeJS operates on a single-thread using non-blocking function call
+
+f1(){}
+f2(){}
+
+console.log("Before f1");
+setTimeout(f1,2000)
+setTimeout(f2,1000)
+
+f3();
+f2();
+
+console.log("After f2");
+
+Async code will go into a new thread stack
+
+IO bound application in NodeJS is better
+for CPU bound both nodejs and java
+
+Node js uses an event-driven, non-blocing I/O model that makes it ligthweight and efficient
+
+
+FS module: File handling
+
+Some function is async or sycn
+
+sync at ending of file is synchronous function
+if not then it is a asynchronous function
+	
+for async function callback is must/required but for synchronous is not required.
+
+To install express, body-prser, mysql modules
+	1. Create a folder express demos
+	2. copy file package.js
+	

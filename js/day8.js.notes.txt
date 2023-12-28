@@ -1,0 +1,16 @@
+Props
+props can be used in both funcal as well as class componenet
+
+props is always read-only
+
+props are used to pass data between parent to child or child to parent communication
+
+state:
+
+this.state can be used only in class component
+
+the value of stat can be modifed by using this.setState function
+
+stat is used to manage internal stat of the component
+
+in older version was not available in funcaional component, but in new version with the help of use state hook we may use stat in functional component indirectly

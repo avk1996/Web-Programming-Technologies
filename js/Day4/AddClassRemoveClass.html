@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Class Remove Class</title>
+    <style>
+      .MyClassShow {
+        background-color: blue;
+        color: white;
+        display: block;
+      }
+      .MyClassHide {
+        display: none;
+      }
+    </style>
+    <script src="../../jquery/scripts/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#show").click(function () {
+          $("h1").addClass("MyClassShow");
+          $("h1").removeClass("MyClassHide");
+        });
+        $("#hide").click(function () {
+          //another way to write the above function selector as function chaning
+          $("h1").removeClass("MyClassShow").addClass("MyClassHide");
+        });
+        $("#toggle").click(function () {
+          $("h1").toggleClass("MyClassShow").toggleClass("MyClassHide");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button type="button" name="btn1" id="show">SHOW</button>
+    <button type="button" name="btn1" id="hide">HIDE</button>
+    <button type="button" name="btn1" id="toggle">TOGGLE</button>
+    <h1 class="MyClassShow">PRESS ABOVE BUTTONS</h1>
+  </body>
+</html>

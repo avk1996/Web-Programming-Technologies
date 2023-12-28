@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <script>
+    function getCount() {
+      //To check if storage API is available or not
+      var count = 0;
+      if (typeof Storage != undefined) {
+        if (localStorage.count != undefined) {
+          localStorage.count = parseInt(localStorage.count) + 1;
+          //   parseInt(localStorage.getItem(count));
+          //   localStorage.setItem(parseInt(localStorage.getItem("count")) + 1);
+        } else {
+          //   localStorage.count = 1;
+          // Another way of assigning a variable
+          localStorage.setItem("count", 1);
+        }
+        document.getElementById("MyDiv").innerHTML =
+          "You clicked: " + localStorage.count + " times";
+      }
+    }
+  </script>
+</head>
+<html lang="en">
+  <body>
+    <button type="button" name="btn" id="btn" onclick="getCount()">
+      CLICK
+    </button>
+    <div id="MyDiv"></div>
+  </body>
+</html>

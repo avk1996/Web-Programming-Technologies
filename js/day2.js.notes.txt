@@ -1,0 +1,107 @@
+let keyword instead of var
+
+Difference between var,let and const
+
+var : duplicate declaration is possible
+let : duplicate declaration is not possible
+const : re-declaration is not possible
+
+var : is global or function scope
+let : blocked scope
+const : consts are blocked scope
+
+var : variable hoisting is possible in var
+let : hoisting is not possible 
+const : Hoisting of variable is not possible 
+
+e.g. declaring variable after accessing it
+for example printing a variable 
+then initailization of it is not error in var but in let is their
+
+const keyword is just like final in java or const in c++ or sealed in C#
+
+why? To finalize a function is one of const keyword application
+
+when used a variable without var,let or const it is by default var
+
+ECMAS 6 style of writing
+
+const f4 = () => {
+  console.log("i am in f4 arrow funtion");
+}; //
+
+Different ways of declaration of function
+
+Method1: 
+
+function f1(){}
+
+Method2:
+
+
+argumets array will store 
+
+... are called as rest operator after ECMA 6, to add multiple parameters
+
+function overloading is not possible in JS
+
+closure function: 
+if there is a function which has access to its parent function scope then it is called as closure function
+
+function under another function
+nested function
+
+when? 
+consider a case where a function calculates the combination
+
+function combination() {
+    var ans = n!/(n-r)!;
+}
+
+we need a function to cal. factorial, we write a seperate function, but this seperate function is global
+if we want to create a function which is private and restricted to a our own function 
+then we use closure function
+
+Self calling function: 
+Executed only once
+e.g.
+(function () {
+  console.log("In function self calling function");
+})();
+(function (x, y) {
+  console.log("Self calling function: ", x, y);
+})(10, 20);
+
+we can write self calling function to calling function
+
+
+Object: 
+e.g.: 
+
+      var emp = {empid:12,ename:'Avi',dept:'gaming'}
+
+we can add new properties
+
+like emp.mobile = 232334434
+
+
+proto property: 
+any object1 you are assigning to object2 by proto property, then object1 is the child of object2
+
+Template operator: 
+anything enclosed in `` and value can be accessed as ${value you want}
+
+
+There is not interface, access modifier in JAVASCRIPT
+
+INHERITANCE
+CONSTRUCTORS
+
+geolocation is a object in navigator
+
+Location storage and Session storage: 
+
+Set Interval Set Timeout: Asynchronous function
+
+Worker thread is created for setTimeout
+setTimeout will make the function to execute after certain time interval

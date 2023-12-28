@@ -1,0 +1,98 @@
+GET  : http://localhost:9090/products                : Read all products
+GET  : http://localhost:9090/products/product/:pnum  : Read one product
+POST : http://localhost:9090/products/product/:pnum  : Create or add data in the database
+PUT  : http://localhost:9090/products/product/:pnum  : update the data in the database
+POST : http://localhost:9090/products/product/:pnum  : delete the product
+
+writing a web service or writing api 
+
+React JS:
+
+components:
+Functional and class components types
+
+parent to child and child to parent is class component
+
+Routing
+
+Axios 
+
+Redux (store store at a centralized base and use it whenwhere we want) 
+
+thunk
+
+React (Group of compoenets which form a js and will be shown in browser)
+ Vs Angular
+
+Defn: It is a front end library, it uses MVC AND MVVM model, it helps to design SPA, and divided into multiple components, routing feature will make your SPA looks like a MPA.
+
+-------------------------------------------------------------
+To reach js we need to use CLI tool -> Create-react-app
+
+Step 1: Create-react-app tool -> npm install Create-react-app -g
+Step 2: Create a application -> create-react-app myapp
+
+SPA: Single Page Application
+
+To create a new application without
+npx Create-react-app myapp
+-------------------------------------------------------------
+when we use routing it looks like MPA (multi page application)
+
+but every react and angular are SPA
+
+only one html page is there and when loading only portion of the page is loaded
+
+____________________________________________
+		header
+		Title
+
+Form	Table	list
+
+footer(menu1->form,menu2->table,menu3->list)
+____________________________________________
+
+First component -> root component (app)             Level 0
+And other components
+Header	NavBar	Footer	Table	List		    Level 1	
+			Form			    Level 2
+
+	
+While designing react applicaito, it is divided into multiple compoenets
+ _________________________|_____________________
+|						|
+Stateless Component			StateFull component
+(Functional)				(class)
+					import React,{Component} from 'React'
+Every user defined component		class MyCompnent extends React.Component{
+must start with capital letter		render(){
+const MyComponent=()=>{			return(<h1>hello world!</h1>)
+return (<h1>hello world!</h1>)		}
+export default MyComponent;	
+
+jsx 					export default MyComponent
+Functial component is a 		Class component 
+js function which returns
+JSX Xml
+
+It is a stateless component		it is a statful compnent, to manage internal 
+because built in state 			state, we can use state building object in this 
+object is not available			component
+
+Lifecycle methods cannot be used	Lifecycle methods can be used in class component	
+in functional component, but in 
+new version  lot of hooks are 
+available, which are equivalent to 
+lifecycle methods
+
+
+any object/variable in jsx must be written in curly bracket	
+
+sending data from parent to child by props object
+
+To install bootstrap:
+
+npm install bootstrap@4.6 react-bootstrap
+
+add following entry in App.js
+import 'bootstrap/dist/css/
