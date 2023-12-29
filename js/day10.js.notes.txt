@@ -1,0 +1,7 @@
+Life Cycle methods:
+
+Mounting -> ComponentDidMount -> initalization of state
+Updating -> 
+Unmounting
+
+react-router-dom -> in package.json
