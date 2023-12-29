@@ -1,25 +1,24 @@
 import React, { useState } from "react";
 
 export default function App() {
-  const [data, setData] = useState({
+  const [calData, setCalData] = useState({
     num1: 0,
     num2: 0,
-    mathOp: "",
   });
 
   const [Result, setCalResult] = useState(0);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setData((prevState) => ({ ...prevState, [name]: value }));
+    setCalData((prevState) => ({ ...prevState, [name]: value }));
     console.log("In handle change");
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(data);
-    const v1 = parseInt(data.num1);
-    const v2 = parseInt(data.num2);
+    console.log(calData);
+    const v1 = parseInt(calData.num1);
+    const v2 = parseInt(calData.num2);
     const sum = v1 + v2;
     setCalResult(sum);
     console.log("In handle submit");
@@ -38,7 +37,7 @@ export default function App() {
               <input
                 type="number"
                 name="num1"
-                value={data.num1}
+                value={calData.num1}
                 onChange={handleChange}
               />
             </td>
@@ -51,22 +50,14 @@ export default function App() {
               <input
                 type="number"
                 name="num2"
-                value={data.num2}
+                value={calData.num2}
                 onChange={handleChange}
               />
             </td>
           </tr>
           <tr>
             <td>
-              <input
-                type="radio"
-                name="add"
-                value={data.mathOp}
-                onChange={handleChange}
-              />
-            </td>
-            <td>
-              <button type="submit">Do Cal</button>
+              <button type="submit">Add</button>
             </td>
           </tr>
         </table>
