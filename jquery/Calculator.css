@@ -1,0 +1,43 @@
+#adda {
+  background-color: white;
+  color: black;
+  font-size: 100px;
+}
+.adda {
+  background-color: pink;
+  color: black;
+  font-weight: bolder;
+  font-size: 100px;
+  margin: auto;
+}
+.addr {
+  background-color: black;
+  color: pink;
+  font-weight: bolder;
+  font-size: 100px;
+  margin: auto;
+}
+#div {
+  background-color: pink;
+  color: black;
+  font-weight: bolder;
+  font-size: 100px;
+  margin: auto;
+}
+#diff {
+  background-color: pink;
+  color: black;
+  font-weight: bolder;
+  font-size: 100px;
+  margin: auto;
+}
+#pro {
+  background-color: pink;
+  color: black;
+  font-weight: bolder;
+  font-size: 100px;
+  margin: auto;
+}
+.MyDiv {
+  background-color: cyan;
+}
