@@ -11,51 +11,57 @@
   </head>
   <body>
     <h1 align="center">Math Operation</h1>
-    <form>
-      <table>
-        <tr>
-          <td><label for="num1">Number 1: </label></td>
-          <td>
-            <input type="number" id="num1" name="num1" value="num1" autofocus />
-          </td>
-          <td>
-            <div style="color: red" id="error1"></div>
-          </td>
-        </tr>
-        <tr>
-          <td><label for="num2">Number 2: </label></td>
-          <td>
-            <input type="number" id="num2" name="num2" value="num2" />
-          </td>
-          <td>
-            <div style="color: red" id="error2"></div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <select id="mathOp">
-              <option value="add">Addition</option>
-              <option value="diff">Difference</option>
-              <option value="pro">Product</option>
-              <option value="div">Division</option>
-            </select>
-          </td>
-          <td>
-            <button
-              type="button"
-              id="doMath"
-              name="doMath"
-              value="doMath"
-              onclick="MathOperation()"
-            >
-              Do Math
-            </button>
-          </td>
-        </tr>
-      </table>
-    </form>
-    <div>
-      <h4>The Result is: <span id="getResult"></span></h4>
+    <div align="center">
+      <form>
+        <table>
+          <tr>
+            <td><label for="num1">Number 1: </label></td>
+            <td>
+              <input
+                type="number"
+                id="num1"
+                name="num1"
+                value="num1"
+                autofocus
+              />
+            </td>
+            <td>
+              <div style="color: red" id="error1"></div>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="num2">Number 2: </label></td>
+            <td>
+              <input type="number" id="num2" name="num2" value="num2" />
+            </td>
+            <td>
+              <div style="color: red" id="error2"></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <select id="mathOp">
+                <option value="add">Addition</option>
+                <option value="diff">Difference</option>
+                <option value="pro">Product</option>
+                <option value="div">Division</option>
+              </select>
+              <button
+                type="button"
+                id="doMath"
+                name="doMath"
+                value="doMath"
+                onclick="MathOperation()"
+              >
+                Do Math
+              </button>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <div>
+        <h4>The Result is: <span id="getResult"></span></h4>
+      </div>
     </div>
   </body>
 </html>
