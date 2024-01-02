@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Math Operation</title>
-        <script src="MathOpJS.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Operation</title>
+    <script src="MathOpJS.js"></script>
     <!-- <script src="./scripts/jquery.js"></script> -->
     <!-- <script src="MathOpJQuery.js"></script> -->
   </head>
@@ -24,11 +24,17 @@
               autofocus
             />
           </td>
+          <td>
+            <div style="color: red" id="error1"></div>
+          </td>
         </tr>
         <tr>
           <td><label for="num2">Number 2: </label></td>
           <td>
             <input type="number" id="num2" name="num2" value="num2" required />
+          </td>
+          <td>
+            <div style="color: red" id="error2"></div>
           </td>
         </tr>
         <tr>
