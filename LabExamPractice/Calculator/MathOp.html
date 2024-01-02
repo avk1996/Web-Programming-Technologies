@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Operation</title>
+  </head>
+  <body>
+    <h1 align="center">Math Operation</h1>
+    <form>
+      <table>
+        <tr>
+          <td><label for="num1">Number 1: </label></td>
+          <td>
+            <input
+              type="number"
+              id="num1"
+              name="num1"
+              value="num1"
+              required
+              autofocus
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="num2">Number 2: </label></td>
+          <td>
+            <input type="number" id="num2" name="num2" value="num2" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select id="mathOp">
+              <option value="add">Addition</option>
+              <option value="diff">Difference</option>
+              <option value="pro">Product</option>
+              <option value="div">Division</option>
+            </select>
+          </td>
+          <td>
+            <button type="button" id="doMath" name="doMath" value="doMath">
+              Do Math
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
