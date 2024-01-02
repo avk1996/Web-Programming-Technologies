@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Math Operation</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Math Operation</title>
+        <script src="MathOpJS.js"></script>
+    <!-- <script src="./scripts/jquery.js"></script> -->
+    <!-- <script src="MathOpJQuery.js"></script> -->
   </head>
   <body>
     <h1 align="center">Math Operation</h1>
@@ -38,12 +41,21 @@
             </select>
           </td>
           <td>
-            <button type="button" id="doMath" name="doMath" value="doMath">
+            <button
+              type="button"
+              id="doMath"
+              name="doMath"
+              value="doMath"
+              onclick="MathOperation()"
+            >
               Do Math
             </button>
           </td>
         </tr>
       </table>
     </form>
+    <div>
+      <h4>The Result is: <span id="getResult"></span></h4>
+    </div>
   </body>
 </html>
