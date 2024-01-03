@@ -1,5 +1,5 @@
 import "./App.css";
-import ToDo from "./components/ToDoFrom";
+import ToDo from "./components/ToDoForm";
 // import "bootstrap/dist/css/bootstrap.css";
 
 export default function App() {

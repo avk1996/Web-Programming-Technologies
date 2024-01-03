@@ -1,13 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 function ToDoList() {
-  const [list, setList] = useState([]);
-  //   useEffect(() => {
-  //     const result = axios.get("https://localhost:3000");
-  //     result.then((data) => {
-  //       setList([...data.data]);
-  //     });
-  //   }, []);
   return (
     <div>
       <h3 align="center">List Added</h3>
